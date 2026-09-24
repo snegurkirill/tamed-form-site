@@ -18,7 +18,7 @@
   --pad-bottom: 97;
 
   --ink: #a9a9a9;
-  --ink-strong: #000;
+  --ink-strong: #3a362f;
   --paper: #f7f3ec;
   --card-bg: #efe9dd;
 
@@ -193,10 +193,10 @@ body.modal-open { overflow: hidden; }
 
 .modal__title {
   margin: 0;
-  color: var(--ink-strong);
+  color: var(--ink);
   font-size: calc(22 * var(--u));
   line-height: calc(26 * var(--u));
-  font-weight: 650;
+  font-weight: var(--wt-body);
   letter-spacing: var(--track-body);
 }
 
