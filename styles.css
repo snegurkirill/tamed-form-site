@@ -1,0 +1,240 @@
+/* ---------------------------------------------------------------------------
+   Палисадник — гид по растениям
+
+   Ported from the "Andrey Novitskiy, site / CORE" catalogue system: same
+   design-pixel unit, same 430px mobile frame, same two-column card grid
+   (202 + 6 + 202 inside a 10px inset), same Source Sans caption style.
+   Price/status ("Забронирована/Приобретена") is replaced by a wintering
+   status dot ("Зимует/Зимует 50/50/Не зимует").
+   --------------------------------------------------------------------------- */
+
+:root {
+  --u: min(calc(100vw / 430), 1.2px);
+
+  --edge: 0;
+  --inset: 10;
+  --pad-top: 40;
+  --pad-bottom: 97;
+
+  --ink: #a9a9a9;
+  --ink-strong: #000;
+  --paper: #fff;
+
+  --status-winters: #2f9e44;
+  --status-fifty: #e8890c;
+  --status-no: #a9a9a9;
+
+  --font: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+  --font-caption: "Source Sans Pro", "Source Sans 3", system-ui,
+                  "Helvetica Neue", Arial, sans-serif;
+
+  --fs-body: 20;
+  --fs-caption: 14;
+  --wt-body: 420;
+  --wt-caption: 400;
+  --track-body: -0.04em;
+  --track-caption: -0.05em;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("assets/fonts/source-sans-3-latin.woff2") format("woff2-variations");
+  font-weight: 200 900; font-style: normal; font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("assets/fonts/source-sans-3-cyrillic.woff2") format("woff2-variations");
+  font-weight: 200 900; font-style: normal; font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("assets/fonts/source-sans-pro-latin.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("assets/fonts/source-sans-pro-cyrillic.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: calc(var(--fs-body) * var(--u));
+  line-height: calc(var(--fs-body) * var(--u));
+  font-weight: var(--wt-body);
+  letter-spacing: var(--track-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  width: calc(430 * var(--u));
+  margin-inline: auto;
+  padding: calc(var(--pad-top) * var(--u)) 0 calc(var(--pad-bottom) * var(--u))
+           calc(var(--edge) * var(--u));
+}
+
+/* --- masthead ------------------------------------------------------------ */
+
+.masthead {
+  padding-inline: calc(var(--inset) * var(--u));
+  margin-bottom: calc(40 * var(--u));
+}
+
+.masthead__title {
+  display: block;
+  margin: 0;
+  color: var(--ink-strong);
+  font-size: calc(28 * var(--u));
+  line-height: calc(32 * var(--u));
+  font-weight: 650;
+  letter-spacing: var(--track-body);
+}
+
+.masthead__note {
+  display: block;
+  margin-top: calc(8 * var(--u));
+  font-family: var(--font-caption);
+  font-size: calc(var(--fs-caption) * var(--u));
+  line-height: 1.3;
+}
+
+/* --- legend ---------------------------------------------------------------- */
+
+.legend {
+  padding-inline: calc(var(--inset) * var(--u));
+  margin-bottom: calc(32 * var(--u));
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: calc(18 * var(--u));
+  row-gap: calc(6 * var(--u));
+  font-family: var(--font-caption);
+  font-size: calc((var(--fs-caption) - 2) * var(--u));
+}
+
+.legend__item::before {
+  content: "•";
+  font-size: 1.6em;
+  line-height: 0;
+  vertical-align: -0.08em;
+  margin-right: 0.35em;
+  color: var(--dot);
+}
+.legend__item--winters { --dot: var(--status-winters); }
+.legend__item--fifty   { --dot: var(--status-fifty); }
+.legend__item--no      { --dot: var(--status-no); }
+
+/* --- plant grid ------------------------------------------------------------ */
+
+.content { padding-inline: calc(var(--inset) * var(--u)); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, calc(202 * var(--u)));
+  column-gap: calc(6 * var(--u));
+  row-gap: calc(34 * var(--u));
+  align-items: start;
+}
+
+.plant { margin: 0; }
+
+.plant img {
+  display: block;
+  width: 100%;
+  height: calc(280 * var(--u));
+  object-fit: contain;
+  object-position: 50% 100%;
+  background: #f4f4f2;
+}
+
+.plant--wide { grid-column: span 2; }
+.plant--wide img { height: auto; }
+
+.plant figcaption {
+  font-family: var(--font-caption);
+  font-size: calc(var(--fs-caption) * var(--u));
+  line-height: normal;
+  font-weight: var(--wt-caption);
+  letter-spacing: var(--track-caption);
+  margin-top: calc(7 * var(--u));
+  text-wrap: balance;
+}
+
+.plant figcaption > span { display: block; }
+
+.plant__title { color: var(--ink-strong); }
+
+.plant__note,
+.plant__status {
+  font-size: calc((var(--fs-caption) - 2) * var(--u));
+  line-height: 1.2;
+}
+
+.plant__note { margin-top: calc(6 * var(--u)); }
+.plant__status { margin-top: calc(4 * var(--u)); }
+
+.plant__status::before {
+  content: "•";
+  color: var(--dot);
+  font-size: 1.6em;
+  line-height: 0;
+  vertical-align: -0.08em;
+  margin-right: 0.2em;
+}
+.plant__status--winters { --dot: var(--status-winters); }
+.plant__status--fifty   { --dot: var(--status-fifty); }
+.plant__status--no      { --dot: var(--status-no); }
+
+/* --- credits ---------------------------------------------------------------- */
+
+.credits {
+  padding-inline: calc(var(--inset) * var(--u));
+  margin-top: calc(56 * var(--u));
+  font-family: var(--font-caption);
+  font-size: calc((var(--fs-caption) - 3) * var(--u));
+  line-height: 1.5;
+}
+
+.credits summary { cursor: pointer; color: var(--ink-strong); }
+.credits ul { margin: calc(10 * var(--u)) 0 0; padding: 0; list-style: none; }
+.credits li { margin-top: calc(4 * var(--u)); }
+.credits a { color: inherit; }
+
+/* --- desktop -------------------------------------------------------------
+   Same cards at the same 202px width, four across instead of two, hung off the
+   128px left margin.
+   --------------------------------------------------------------------------- */
+
+@media (min-width: 1000px) {
+  :root {
+    --u: 1px;
+    --edge: 128;
+    --inset: 0;
+    --pad-top: 72;
+    --pad-bottom: 96;
+  }
+
+  .page { width: auto; margin-inline: 0; }
+
+  .masthead { margin-bottom: calc(48 * var(--u)); }
+
+  .grid {
+    grid-template-columns: repeat(4, calc(202 * var(--u)));
+    width: max-content;
+  }
+}

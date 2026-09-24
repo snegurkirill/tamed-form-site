@@ -1,0 +1,109 @@
+{
+  "title": "Гид по растениям",
+  "note": "Палисадник — что зимует в грунте, а что нет",
+  "source": "https://docs.google.com/spreadsheets/d/1mqkmd61Bgd_vCVFkLnXN0lIh0IU-E7dQ45kRVp9u5Wc/edit#gid=797010112",
+  "fetched": "2026-09-24",
+  "statuses": {
+    "winters": "Зимует",
+    "fifty": "Зимует 50/50",
+    "no": "Не зимует"
+  },
+  "plants": [
+    {
+      "id": 1, "slug": "zemlyanika", "title": "Земляника «Александрия»",
+      "status": "winters", "note": "Зимует",
+      "image": "assets/plants/01-zemlyanika.jpg",
+      "credit": {"author": "Ivar Leidus", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Fragaria_vesca_fruit_-_Keila.jpg"}
+    },
+    {
+      "id": 2, "slug": "moliniya", "title": "Молиния голубая ‘Heidebraut’",
+      "status": "winters", "note": "Зимует",
+      "image": "assets/plants/02-moliniya.jpg",
+      "credit": {"author": "Krzysztof Ziarnek, Kenraiz", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Molinia_caerulea_kz07.jpg"}
+    },
+    {
+      "id": 3, "slug": "myata", "title": "Мята ананасная",
+      "status": "winters", "note": "Зимует",
+      "image": "assets/plants/03-myata.jpg",
+      "credit": {"author": "Krzysztof Ziarnek, Kenraiz", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Mentha_suaveolens_%27Variegata%27_kz01.jpg"}
+    },
+    {
+      "id": 4, "slug": "tysyachelistnik", "title": "Тысячелистник птармика ‘Marshmallow’",
+      "status": "winters", "note": "Зимует",
+      "image": "assets/plants/04-tysyachelistnik.jpg",
+      "credit": {"author": "Agnieszka Kwiecień, Nova", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Achillea_ptarmica_Krwawnik_kichawiec_2016-07-23_01.jpg"}
+    },
+    {
+      "id": 5, "slug": "vinograd-devichiy", "title": "Виноград девичий",
+      "status": "winters", "note": "Зимует",
+      "image": "assets/plants/05-vinograd-devichiy.jpg",
+      "credit": {"author": "NY State IPM Program at Cornell University", "license": "CC BY 2.0", "source": "https://commons.wikimedia.org/wiki/File:Parthenocissus_quinquefolia_-_leaves_(18437759424).jpg"}
+    },
+    {
+      "id": 6, "slug": "koreopsis", "title": "Кореопсис крупноцветковый",
+      "status": "fifty", "note": "Зимует 50/50",
+      "image": "assets/plants/06-koreopsis.jpg",
+      "credit": {"author": "Miekks", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Coreopsis_Grandiflora_Varient.jpg"}
+    },
+    {
+      "id": 7, "slug": "lofant", "title": "Лофант ‘Blue Fortune’ / ‘Black Adder’",
+      "status": "fifty", "note": "Зимует 50/50",
+      "image": "assets/plants/07-lofant.jpg",
+      "credit": {"author": "David J. Stang", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Agastache_Blue_Fortune_3zz.jpg"}
+    },
+    {
+      "id": 8, "slug": "petrushka", "title": "Петрушка листовая",
+      "status": "no", "note": "Не зимует (двулетник, выращивается как однолетник)",
+      "image": "assets/plants/08-petrushka.jpg",
+      "credit": {"author": "Forest & Kim Starr", "license": "CC BY 3.0", "source": "https://commons.wikimedia.org/wiki/File:Starr_070308-5408_Petroselinum_crispum.jpg"}
+    },
+    {
+      "id": 9, "slug": "perets-dekorativny", "title": "Перец декоративный",
+      "status": "no", "note": "Не зимует в грунте, в тепле — как комнатное",
+      "image": "assets/plants/09-perets-dekorativny.jpg",
+      "credit": {"author": "Satin66Flower", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:CapsiannuumMedusara.jpg"}
+    },
+    {
+      "id": 10, "slug": "verbena", "title": "Вербена буэнос-айресская",
+      "status": "no", "note": "Не зимует в средней полосе, выращивается как однолетник",
+      "image": "assets/plants/10-verbena.jpg",
+      "credit": {"author": "Shuvaev", "license": "CC BY 4.0", "source": "https://commons.wikimedia.org/wiki/File:Verbena_bonariensis,_Morris_Arboretum_02.jpg"}
+    },
+    {
+      "id": 11, "slug": "gaura", "title": "Гаура Линдхеймера",
+      "status": "no", "note": "Не зимует, выращивается как однолетник",
+      "image": "assets/plants/11-gaura.jpg",
+      "credit": {"author": "Agnes Monkelbaan", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Gaura_lindheimeri,_prachtkaars._(actm)_01.jpg"}
+    },
+    {
+      "id": 12, "slug": "kosmeya", "title": "Космея дваждыперистая",
+      "status": "no", "note": "Не зимует, однолетник",
+      "image": "assets/plants/12-kosmeya.jpg",
+      "credit": {"author": "Kryesmin", "license": "CC0", "source": "https://commons.wikimedia.org/wiki/File:Cosmos_bipinnatus_(flowers)_01.jpg"}
+    },
+    {
+      "id": 13, "slug": "tabak-dushisty", "title": "Табак душистый",
+      "status": "no", "note": "Не зимует, однолетник",
+      "image": "assets/plants/13-tabak-dushisty.jpg",
+      "credit": {"author": "Scott Zona", "license": "CC BY 2.0", "source": "https://commons.wikimedia.org/wiki/File:Nicotiana_alata_%E2%80%94_Scott_Zona_003.jpg"}
+    },
+    {
+      "id": 14, "slug": "lobeliya-krasnaya", "title": "Лобелия красная",
+      "status": "no", "note": "Не зимует, однолетник в средней полосе",
+      "image": "assets/plants/14-lobeliya-krasnaya.jpg",
+      "credit": {"author": "Dr. Thomas G. Barnes / U.S. Fish and Wildlife Service", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:Lobelia_cardinalis_-_Cardinal_Flower.jpg"}
+    },
+    {
+      "id": 15, "slug": "georginy", "title": "Георгины (клубни)",
+      "status": "no", "note": "Не зимуют — клубни выкапывать",
+      "image": "assets/plants/15-georginy.jpg",
+      "credit": {"author": "BRPever", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Garden_Dahlia_flower.jpg"}
+    },
+    {
+      "id": 16, "slug": "tomaty-cherri", "title": "Томаты черри",
+      "status": "no", "note": "Не зимуют, однолетник",
+      "image": "assets/plants/16-tomaty-cherri.jpg",
+      "credit": {"author": "JS", "license": "CC BY-SA 3.0", "source": "https://commons.wikimedia.org/wiki/File:Cherry_Tomato_on_Vine.JPG"}
+    }
+  ]
+}
