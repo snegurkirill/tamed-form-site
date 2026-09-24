@@ -5,105 +5,361 @@
   "fetched": "2026-09-24",
   "statuses": {
     "winters": "Зимует",
-    "fifty": "Зимует 50/50",
+    "fifty": "Зимует при условиях",
     "no": "Не зимует"
   },
   "plants": [
     {
-      "id": 1, "slug": "zemlyanika", "title": "Земляника «Александрия»",
-      "status": "winters", "note": "Зимует",
+      "id": 1,
+      "slug": "zemlyanika",
+      "title": "Земляника «Александрия»",
+      "status": "winters",
+      "note": "Зимует",
       "image": "assets/plants/01-zemlyanika.jpg",
-      "credit": {"author": "Ivar Leidus", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Fragaria_vesca_fruit_-_Keila.jpg"}
+      "credit": {
+        "author": "Ivar Leidus",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Fragaria_vesca_fruit_-_Keila.jpg"
+      },
+      "care": {
+        "soil": "Рыхлая плодородная, слабокислая (pH 5,5–6,5), с хорошим дренажем",
+        "neighbors": "Хорошо с чесноком, луком, бархатцами; не рядом с капустой",
+        "light": "Солнце или лёгкая полутень",
+        "planting": "Грядка или контейнер, 20–25 см между кустиками, точку роста не заглублять",
+        "watering": "Регулярный умеренный, без переувлажнения, в жару чаще",
+        "fertilizer": "Весной — азотное для листвы, в начале цветения — комплексное с калием и фосфором",
+        "other": "Безусая, плодоносит всё лето до заморозков; на зиму замульчировать"
+      }
     },
     {
-      "id": 2, "slug": "moliniya", "title": "Молиния голубая ‘Heidebraut’",
-      "status": "winters", "note": "Зимует",
+      "id": 2,
+      "slug": "moliniya",
+      "title": "Молиния голубая ‘Heidebraut’",
+      "status": "winters",
+      "note": "Зимует",
       "image": "assets/plants/02-moliniya.jpg",
-      "credit": {"author": "Krzysztof Ziarnek, Kenraiz", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Molinia_caerulea_kz07.jpg"}
+      "credit": {
+        "author": "Krzysztof Ziarnek, Kenraiz",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Molinia_caerulea_kz07.jpg"
+      },
+      "care": {
+        "soil": "Влажный, умеренно плодородный, слабокислый",
+        "neighbors": "Хорошо с многолетниками и декоративными злаками",
+        "light": "Солнце/полутень",
+        "planting": "Высаживать на постоянное место, куст разрастается",
+        "watering": "Стабильная влажность, не пересушивать",
+        "fertilizer": "Весной комплексное для злаков/многолетников",
+        "other": "Сухие стебли не обрезать до весны — декоративна зимой; обрезка весной под корень"
+      }
     },
     {
-      "id": 3, "slug": "myata", "title": "Мята ананасная",
-      "status": "winters", "note": "Зимует",
+      "id": 3,
+      "slug": "myata",
+      "title": "Мята ананасная",
+      "status": "winters",
+      "note": "Зимует",
       "image": "assets/plants/03-myata.jpg",
-      "credit": {"author": "Krzysztof Ziarnek, Kenraiz", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Mentha_suaveolens_%27Variegata%27_kz01.jpg"}
+      "credit": {
+        "author": "Krzysztof Ziarnek, Kenraiz",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mentha_suaveolens_%27Variegata%27_kz01.jpg"
+      },
+      "care": {
+        "soil": "Плодородный, влажный, любой pH",
+        "neighbors": "Агрессивно разрастается — сажать отдельно, не рядом с нежными культурами",
+        "light": "Полутень/солнце",
+        "planting": "Ограничить корневую систему бордюрной лентой или врытым контейнером",
+        "watering": "Обильный, любит влагу",
+        "fertilizer": "Минимально, органики при посадке достаточно",
+        "other": "Обрезка стимулирует кустистость; на зиму укрытие не требуется"
+      }
     },
     {
-      "id": 4, "slug": "tysyachelistnik", "title": "Тысячелистник птармика ‘Marshmallow’",
-      "status": "winters", "note": "Зимует",
+      "id": 4,
+      "slug": "tysyachelistnik",
+      "title": "Тысячелистник птармика ‘Marshmallow’",
+      "status": "winters",
+      "note": "Зимует",
       "image": "assets/plants/04-tysyachelistnik.jpg",
-      "credit": {"author": "Agnieszka Kwiecień, Nova", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Achillea_ptarmica_Krwawnik_kichawiec_2016-07-23_01.jpg"}
+      "credit": {
+        "author": "Agnieszka Kwiecień, Nova",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Achillea_ptarmica_Krwawnik_kichawiec_2016-07-23_01.jpg"
+      },
+      "care": {
+        "soil": "Обычный садовый, дренированный",
+        "neighbors": "Хорошо со злаками, кореопсисом, лофантом",
+        "light": "Солнце",
+        "planting": "Разрастается корневищами — обозначить границы посадки",
+        "watering": "Умеренный, засухоустойчив после укоренения",
+        "fertilizer": "Не требователен, весной можно комплексное",
+        "other": "Обрезка отцветших зонтиков продлевает цветение; делить куст раз в 3–4 года"
+      }
     },
     {
-      "id": 5, "slug": "vinograd-devichiy", "title": "Виноград девичий",
-      "status": "winters", "note": "Зимует",
+      "id": 5,
+      "slug": "vinograd-devichiy",
+      "title": "Виноград девичий",
+      "status": "winters",
+      "note": "Зимует",
       "image": "assets/plants/05-vinograd-devichiy.jpg",
-      "credit": {"author": "NY State IPM Program at Cornell University", "license": "CC BY 2.0", "source": "https://commons.wikimedia.org/wiki/File:Parthenocissus_quinquefolia_-_leaves_(18437759424).jpg"}
+      "credit": {
+        "author": "NY State IPM Program at Cornell University",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Parthenocissus_quinquefolia_-_leaves_(18437759424).jpg"
+      },
+      "care": {
+        "soil": "Любой, нетребователен, дренированный",
+        "neighbors": "Лиана — сажать у опоры отдельно от низких растений, сильно разрастается",
+        "light": "Солнце/тень — растёт везде",
+        "planting": "Нужна опора: шпалера, забор, стена; высокий и объёмный",
+        "watering": "В засуху; взрослому обычно хватает осадков",
+        "fertilizer": "Не требователен",
+        "other": "Ежегодная обрезка для формирования и сдерживания разрастания"
+      }
     },
     {
-      "id": 6, "slug": "koreopsis", "title": "Кореопсис крупноцветковый",
-      "status": "fifty", "note": "Зимует 50/50",
+      "id": 6,
+      "slug": "koreopsis",
+      "title": "Кореопсис крупноцветковый",
+      "status": "fifty",
+      "note": "Зимует при условиях",
       "image": "assets/plants/06-koreopsis.jpg",
-      "credit": {"author": "Miekks", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Coreopsis_Grandiflora_Varient.jpg"}
+      "credit": {
+        "author": "Miekks",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Coreopsis_Grandiflora_Varient.jpg"
+      },
+      "care": {
+        "soil": "Лёгкий дренированный, некислый; не любит застоя воды",
+        "neighbors": "Хорошо с шалфеем, эхинацеей, злаками",
+        "light": "Солнце",
+        "planting": "Сажать на возвышении/дренированном месте — застой воды зимой губителен",
+        "watering": "Умеренный, засухоустойчив, по подсыхании почвы",
+        "fertilizer": "Не любит перекорм — достаточно весенней комплексной подкормки",
+        "other": "Обрезка отцветших соцветий продлевает цветение; осенью срезать под зиму"
+      }
     },
     {
-      "id": 7, "slug": "lofant", "title": "Лофант ‘Blue Fortune’ / ‘Black Adder’",
-      "status": "fifty", "note": "Зимует 50/50",
+      "id": 7,
+      "slug": "lofant",
+      "title": "Лофант ‘Blue Fortune’ / ‘Black Adder’",
+      "status": "fifty",
+      "note": "Зимует при условиях",
       "image": "assets/plants/07-lofant.jpg",
-      "credit": {"author": "David J. Stang", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Agastache_Blue_Fortune_3zz.jpg"}
+      "credit": {
+        "author": "David J. Stang",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Agastache_Blue_Fortune_3zz.jpg"
+      },
+      "care": {
+        "soil": "Лёгкий плодородно-песчаный. ТОЛЬКО НЕ СУГЛИНОК — важно для зимовки",
+        "neighbors": "Хорошо с кореопсисом, тысячелистником, злаками; привлекает пчёл и бабочек",
+        "light": "Солнце",
+        "planting": "Только дренированный участок — застой воды зимой губителен",
+        "watering": "Умеренный, засухоустойчив",
+        "fertilizer": "Необильное, весной комплексное",
+        "other": "Обрезка отцветших метёлок продлевает цветение; в холодных зонах мульчировать на зиму"
+      }
     },
     {
-      "id": 8, "slug": "petrushka", "title": "Петрушка листовая",
-      "status": "no", "note": "Не зимует (двулетник, выращивается как однолетник)",
+      "id": 8,
+      "slug": "petrushka",
+      "title": "Петрушка листовая",
+      "status": "no",
+      "note": "Не зимует (двулетник, выращивается как однолетник)",
       "image": "assets/plants/08-petrushka.jpg",
-      "credit": {"author": "Forest & Kim Starr", "license": "CC BY 3.0", "source": "https://commons.wikimedia.org/wiki/File:Starr_070308-5408_Petroselinum_crispum.jpg"}
+      "credit": {
+        "author": "Forest & Kim Starr",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Starr_070308-5408_Petroselinum_crispum.jpg"
+      },
+      "care": {
+        "soil": "Плодородный, рыхлый, дренированный",
+        "neighbors": "Хорошо с томатами, перцем; отпугивает часть вредителей",
+        "light": "Солнце/полутень",
+        "planting": "Подходит и для грядки, и для контейнера, для смешанных посадок с овощами",
+        "watering": "Регулярный, не пересушивать",
+        "fertilizer": "Азотное для наращивания зелени",
+        "other": "Срезать листья по мере отрастания, не давать стрелковаться"
+      }
     },
     {
-      "id": 9, "slug": "perets-dekorativny", "title": "Перец декоративный",
-      "status": "no", "note": "Не зимует в грунте, в тепле — как комнатное",
+      "id": 9,
+      "slug": "perets-dekorativny",
+      "title": "Перец декоративный",
+      "status": "no",
+      "note": "Не зимует в грунте, в тепле — как комнатное",
       "image": "assets/plants/09-perets-dekorativny.jpg",
-      "credit": {"author": "Satin66Flower", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:CapsiannuumMedusara.jpg"}
+      "credit": {
+        "author": "Satin66Flower",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:CapsiannuumMedusara.jpg"
+      },
+      "care": {
+        "soil": "Плодородный, рыхлый, дренированный",
+        "neighbors": "Хорошо с бархатцами и яркими однолетниками, как акцент в контейнерах",
+        "light": "Солнце",
+        "planting": "Хорошо растёт в горшках/контейнерах",
+        "watering": "Регулярный умеренный, без переувлажнения, в жару чаще",
+        "fertilizer": "Комплексное с калием-фосфором в плодоношение",
+        "other": "Плоды очень острые/несъедобны — учитывать при детях; можно занести в дом осенью"
+      }
     },
     {
-      "id": 10, "slug": "verbena", "title": "Вербена буэнос-айресская",
-      "status": "no", "note": "Не зимует в средней полосе, выращивается как однолетник",
+      "id": 10,
+      "slug": "verbena",
+      "title": "Вербена буэнос-айресская",
+      "status": "no",
+      "note": "Не зимует в средней полосе, выращивается как однолетник",
       "image": "assets/plants/10-verbena.jpg",
-      "credit": {"author": "Shuvaev", "license": "CC BY 4.0", "source": "https://commons.wikimedia.org/wiki/File:Verbena_bonariensis,_Morris_Arboretum_02.jpg"}
+      "credit": {
+        "author": "Shuvaev",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Verbena_bonariensis,_Morris_Arboretum_02.jpg"
+      },
+      "care": {
+        "soil": "Дренированный, некислый, нетребовательна",
+        "neighbors": "Хорошо с космеей, злаками, кореопсисом — не затеняет соседей",
+        "light": "Солнце",
+        "planting": "Сеять на рассаду заранее (долгий цикл до цветения) или в грунт после заморозков",
+        "watering": "Умеренный, засухоустойчива",
+        "fertilizer": "Минимальное",
+        "other": "Активно самосевается; собрать семена осенью"
+      }
     },
     {
-      "id": 11, "slug": "gaura", "title": "Гаура Линдхеймера",
-      "status": "no", "note": "Не зимует, выращивается как однолетник",
+      "id": 11,
+      "slug": "gaura",
+      "title": "Гаура Линдхеймера",
+      "status": "no",
+      "note": "Не зимует, выращивается как однолетник",
       "image": "assets/plants/11-gaura.jpg",
-      "credit": {"author": "Agnes Monkelbaan", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Gaura_lindheimeri,_prachtkaars._(actm)_01.jpg"}
+      "credit": {
+        "author": "Agnes Monkelbaan",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Gaura_lindheimeri,_prachtkaars._(actm)_01.jpg"
+      },
+      "care": {
+        "soil": "Лёгкий дренированный, к бедным почвам устойчива",
+        "neighbors": "Хорошо со злаками, кореопсисом — воздушная, не затеняет",
+        "light": "Солнце",
+        "planting": "Не переносит застоя воды и тяжёлых почв",
+        "watering": "Умеренный, засухоустойчива",
+        "fertilizer": "Минимальное",
+        "other": "Обрезка отцветших метёлок продлевает цветение; в холодных зонах мульчировать на зиму"
+      }
     },
     {
-      "id": 12, "slug": "kosmeya", "title": "Космея дваждыперистая",
-      "status": "no", "note": "Не зимует, однолетник",
+      "id": 12,
+      "slug": "kosmeya",
+      "title": "Космея дваждыперистая",
+      "status": "no",
+      "note": "Не зимует, однолетник",
       "image": "assets/plants/12-kosmeya.jpg",
-      "credit": {"author": "Kryesmin", "license": "CC0", "source": "https://commons.wikimedia.org/wiki/File:Cosmos_bipinnatus_(flowers)_01.jpg"}
+      "credit": {
+        "author": "Kryesmin",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cosmos_bipinnatus_(flowers)_01.jpg"
+      },
+      "care": {
+        "soil": "Любой, даже бедный; жирная почва снижает цветение",
+        "neighbors": "Хорошо со злаками, вербеной; не заглушать низкорослые растения",
+        "light": "Солнце",
+        "planting": "Сеять в грунт весной после заморозков или на рассаду; активно самосевается",
+        "watering": "Умеренный, засухоустойчива",
+        "fertilizer": "Не требуется",
+        "other": "Прищипка для кустистости; собрать семена осенью для пересева"
+      }
     },
     {
-      "id": 13, "slug": "tabak-dushisty", "title": "Табак душистый",
-      "status": "no", "note": "Не зимует, однолетник",
+      "id": 13,
+      "slug": "tabak-dushisty",
+      "title": "Табак душистый",
+      "status": "no",
+      "note": "Не зимует, однолетник",
       "image": "assets/plants/13-tabak-dushisty.jpg",
-      "credit": {"author": "Scott Zona", "license": "CC BY 2.0", "source": "https://commons.wikimedia.org/wiki/File:Nicotiana_alata_%E2%80%94_Scott_Zona_003.jpg"}
+      "credit": {
+        "author": "Scott Zona",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Nicotiana_alata_%E2%80%94_Scott_Zona_003.jpg"
+      },
+      "care": {
+        "soil": "Плодородный, рыхлый, дренированный",
+        "neighbors": "Хорошо с большинством цветов; ароматен вечером — сажать у зоны отдыха",
+        "light": "Солнце/полутень",
+        "planting": "Высаживать рассадой после заморозков",
+        "watering": "Регулярный, не пересушивать",
+        "fertilizer": "Комплексное в течение сезона для продолжительного цветения",
+        "other": "Удалять отцветшие цветки; ядовит при поедании — учитывать при детях и животных"
+      }
     },
     {
-      "id": 14, "slug": "lobeliya-krasnaya", "title": "Лобелия красная",
-      "status": "no", "note": "Не зимует, однолетник в средней полосе",
+      "id": 14,
+      "slug": "lobeliya-krasnaya",
+      "title": "Лобелия красная",
+      "status": "no",
+      "note": "Не зимует, однолетник в средней полосе",
       "image": "assets/plants/14-lobeliya-krasnaya.jpg",
-      "credit": {"author": "Dr. Thomas G. Barnes / U.S. Fish and Wildlife Service", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:Lobelia_cardinalis_-_Cardinal_Flower.jpg"}
+      "credit": {
+        "author": "Dr. Thomas G. Barnes / U.S. Fish and Wildlife Service",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Lobelia_cardinalis_-_Cardinal_Flower.jpg"
+      },
+      "care": {
+        "soil": "Плодородный, влагоёмкий, слабокислый",
+        "neighbors": "Хорошо как бордюрное/почвопокровное с другими однолетниками",
+        "light": "Солнце/полутень",
+        "planting": "Компактное, подходит для контейнеров и переднего плана клумбы",
+        "watering": "Регулярный, не пересушивать почву",
+        "fertilizer": "Лёгкое комплексное раз в 2–3 недели",
+        "other": "Удалять отцветшие цветки для продления цветения"
+      }
     },
     {
-      "id": 15, "slug": "georginy", "title": "Георгины (клубни)",
-      "status": "no", "note": "Не зимуют — клубни выкапывать",
+      "id": 15,
+      "slug": "georginy",
+      "title": "Георгины (клубни)",
+      "status": "no",
+      "note": "Не зимуют — клубни выкапывать",
       "image": "assets/plants/15-georginy.jpg",
-      "credit": {"author": "BRPever", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Garden_Dahlia_flower.jpg"}
+      "credit": {
+        "author": "BRPever",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Garden_Dahlia_flower.jpg"
+      },
+      "care": {
+        "soil": "Плодородный, рыхлый, дренированный",
+        "neighbors": "Не сажать вплотную к высоким многолетникам — нужен доступ для выкопки",
+        "light": "Солнце",
+        "planting": "Высокорослые сорта — предусмотреть опору и подвязку",
+        "watering": "Обильный в жару, без застоя воды",
+        "fertilizer": "Комплексное с калием и фосфором в бутонизацию, без избытка азота",
+        "other": "После первых заморозков срезать ботву, выкопать клубни, просушить, хранить при 5–8°C"
+      }
     },
     {
-      "id": 16, "slug": "tomaty-cherri", "title": "Томаты черри",
-      "status": "no", "note": "Не зимуют, однолетник",
+      "id": 16,
+      "slug": "tomaty-cherri",
+      "title": "Томаты черри",
+      "status": "no",
+      "note": "Не зимуют, однолетник",
       "image": "assets/plants/16-tomaty-cherri.jpg",
-      "credit": {"author": "JS", "license": "CC BY-SA 3.0", "source": "https://commons.wikimedia.org/wiki/File:Cherry_Tomato_on_Vine.JPG"}
+      "credit": {
+        "author": "JS",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cherry_Tomato_on_Vine.JPG"
+      },
+      "care": {
+        "soil": "Плодородный, рыхлый, нейтральный pH",
+        "neighbors": "Хорошо с базиликом, петрушкой, бархатцами; не с картофелем",
+        "light": "Солнце, не менее 6 часов",
+        "planting": "Нужна опора и подвязка, формирование куста",
+        "watering": "Регулярный, под корень, без попадания на листья",
+        "fertilizer": "Комплексное с калием и фосфором в плодоношение, без избытка азота",
+        "other": "Пасынкование, подвязка к опоре; следить за фитофторой в дождливое лето"
+      }
     }
   ]
 }
