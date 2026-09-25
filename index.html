@@ -137,6 +137,21 @@
 
 </div>
 
+<footer class="footer-bar">
+  <button type="button" class="footer-bar__btn" id="recognize-btn">Распознать</button>
+</footer>
+
+<div class="camera" id="camera-screen" hidden>
+  <video class="camera__video" id="camera-video" autoplay playsinline muted></video>
+  <canvas id="camera-canvas" hidden></canvas>
+  <button type="button" class="camera__close" id="camera-close" aria-label="Закрыть">✕</button>
+  <div class="camera__overlay" id="camera-overlay" hidden>
+    <p class="camera__message" id="camera-message"></p>
+    <button type="button" class="camera__retry" id="camera-retry" hidden>Попробовать ещё</button>
+  </div>
+  <button type="button" class="camera__shutter" id="camera-shutter" aria-label="Сделать фото"></button>
+</div>
+
 <!--
   Photo credits (Wikimedia Commons, open licenses — kept here, off-page, per license attribution requirements):
   Земляника «Александрия» — Ivar Leidus, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Fragaria_vesca_fruit_-_Keila.jpg
@@ -212,6 +227,99 @@
   });
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && !modal.hidden) closeModal();
+  });
+
+  // --- camera / recognition ---------------------------------------------
+
+  var recognizeBtn = document.getElementById('recognize-btn');
+  var cameraScreen = document.getElementById('camera-screen');
+  var video = document.getElementById('camera-video');
+  var canvas = document.getElementById('camera-canvas');
+  var cameraClose = document.getElementById('camera-close');
+  var shutter = document.getElementById('camera-shutter');
+  var overlay = document.getElementById('camera-overlay');
+  var message = document.getElementById('camera-message');
+  var retryBtn = document.getElementById('camera-retry');
+  var stream = null;
+
+  function showMessage(text, withRetry) {
+    message.textContent = text;
+    retryBtn.hidden = !withRetry;
+    overlay.hidden = false;
+  }
+
+  function hideMessage() {
+    overlay.hidden = true;
+  }
+
+  function stopStream() {
+    if (stream) {
+      stream.getTracks().forEach(function (t) { t.stop(); });
+      stream = null;
+    }
+  }
+
+  function closeCamera() {
+    stopStream();
+    cameraScreen.hidden = true;
+    hideMessage();
+    shutter.disabled = false;
+  }
+
+  function openCamera() {
+    cameraScreen.hidden = false;
+    hideMessage();
+    shutter.disabled = false;
+    navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' }, audio: false })
+      .then(function (s) {
+        stream = s;
+        video.srcObject = s;
+      })
+      .catch(function () {
+        showMessage('Нет доступа к камере. Разрешите доступ в настройках браузера и попробуйте снова.', true);
+      });
+  }
+
+  function capture() {
+    shutter.disabled = true;
+    showMessage('Распознаём…', false);
+    var w = video.videoWidth, h = video.videoHeight;
+    canvas.width = w;
+    canvas.height = h;
+    canvas.getContext('2d').drawImage(video, 0, 0, w, h);
+    canvas.toBlob(function (blob) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        fetch('/api/identify', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ image: reader.result })
+        })
+          .then(function (r) { return r.json(); })
+          .then(function (res) {
+            if (res.matched && data[res.slug]) {
+              closeCamera();
+              openModal(res.slug);
+            } else {
+              showMessage('Не нашли такое растение в нашей базе. Попробуйте навести ближе, при хорошем свете, на один цветок.', true);
+              shutter.disabled = false;
+            }
+          })
+          .catch(function () {
+            showMessage('Не получилось распознать — проблема с сетью. Попробуйте ещё раз.', true);
+            shutter.disabled = false;
+          });
+      };
+      reader.readAsDataURL(blob);
+    }, 'image/jpeg', 0.85);
+  }
+
+  recognizeBtn.addEventListener('click', openCamera);
+  cameraClose.addEventListener('click', closeCamera);
+  shutter.addEventListener('click', capture);
+  retryBtn.addEventListener('click', function () {
+    hideMessage();
+    shutter.disabled = false;
   });
 })();
 </script>

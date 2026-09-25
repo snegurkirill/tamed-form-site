@@ -15,7 +15,8 @@
   --edge: 0;
   --inset: 10;
   --pad-top: 40;
-  --pad-bottom: 97;
+  --pad-bottom: 170;
+  --footer-h: 86;
 
   --ink: #a9a9a9;
   --ink-strong: #3a362f;
@@ -257,6 +258,128 @@ body.modal-open { overflow: hidden; }
   cursor: pointer;
 }
 
+/* --- footer / recognize ----------------------------------------------------- */
+
+.footer-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  padding: calc(14 * var(--u)) calc(var(--inset) * var(--u))
+           calc(14 * var(--u) + env(safe-area-inset-bottom, 0px));
+  background: linear-gradient(to top, var(--paper) 60%, transparent);
+}
+
+.footer-bar__btn {
+  width: 100%;
+  max-width: calc(410 * var(--u));
+  padding: calc(16 * var(--u)) 0;
+  border: none;
+  border-radius: calc(999 * var(--u));
+  background: var(--ink-strong);
+  color: var(--paper);
+  font-family: var(--font);
+  font-size: calc(17 * var(--u));
+  font-weight: var(--wt-body);
+  letter-spacing: var(--track-body);
+  cursor: pointer;
+}
+
+/* --- camera screen ----------------------------------------------------------- */
+
+.camera {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.camera[hidden] { display: none; }
+
+.camera__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.camera__close {
+  position: absolute;
+  z-index: 2;
+  top: calc(20 * var(--u) + env(safe-area-inset-top, 0px));
+  right: calc(20 * var(--u));
+  width: calc(40 * var(--u));
+  height: calc(40 * var(--u));
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: calc(18 * var(--u));
+  line-height: 1;
+  cursor: pointer;
+}
+
+.camera__shutter {
+  position: absolute;
+  bottom: calc(36 * var(--u) + env(safe-area-inset-bottom, 0px));
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(72 * var(--u));
+  height: calc(72 * var(--u));
+  border-radius: 50%;
+  background: #fff;
+  border: calc(4 * var(--u)) solid rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  cursor: pointer;
+}
+
+.camera__shutter:disabled { opacity: 0.5; cursor: default; }
+
+.camera__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: calc(20 * var(--u));
+  padding: calc(40 * var(--u));
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.camera__overlay[hidden] { display: none; }
+
+.camera__message {
+  margin: 0;
+  color: #fff;
+  font-family: var(--font);
+  font-size: calc(17 * var(--u));
+  line-height: 1.4;
+  max-width: calc(320 * var(--u));
+}
+
+.camera__retry {
+  padding: calc(12 * var(--u)) calc(24 * var(--u));
+  border: none;
+  border-radius: calc(999 * var(--u));
+  background: #fff;
+  color: var(--ink-strong);
+  font-family: var(--font);
+  font-size: calc(15 * var(--u));
+  font-weight: var(--wt-body);
+  cursor: pointer;
+}
+
+.camera__retry[hidden] { display: none; }
+
 /* --- desktop -------------------------------------------------------------
    Same cards at the same 202px width, four across instead of two, hung off the
    128px left margin.
@@ -268,7 +391,7 @@ body.modal-open { overflow: hidden; }
     --edge: 128;
     --inset: 0;
     --pad-top: 72;
-    --pad-bottom: 96;
+    --pad-bottom: 160;
   }
 
   .page { width: auto; margin-inline: 0; }
