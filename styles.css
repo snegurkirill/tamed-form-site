@@ -193,7 +193,7 @@ body.modal-open { overflow: hidden; }
 
 .modal__title {
   margin: 0;
-  color: var(--ink);
+  color: var(--ink-strong);
   font-size: calc(22 * var(--u));
   line-height: calc(26 * var(--u));
   font-weight: var(--wt-body);
@@ -227,13 +227,14 @@ body.modal-open { overflow: hidden; }
 }
 
 .modal__care dt {
-  color: var(--ink-strong);
+  color: var(--ink);
   font-weight: 600;
   margin-top: calc(14 * var(--u));
 }
 .modal__care dt:first-child { margin-top: 0; }
 
 .modal__care dd {
+  color: var(--ink-strong);
   margin: calc(3 * var(--u)) 0 0;
 }
 
