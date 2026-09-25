@@ -102,12 +102,19 @@ body.modal-open { overflow: hidden; }
   margin-bottom: calc(40 * var(--u));
 }
 
+.masthead__logo {
+  display: block;
+  width: calc(84 * var(--u));
+  height: auto;
+  margin-bottom: calc(16 * var(--u));
+}
+
 .masthead__title {
   display: block;
   margin: 0;
   color: var(--ink-strong);
-  font-size: calc(28 * var(--u));
-  line-height: calc(32 * var(--u));
+  font-size: calc(24 * var(--u));
+  line-height: calc(28 * var(--u));
   font-weight: 650;
   letter-spacing: var(--track-body);
 }
