@@ -149,6 +149,7 @@ body.modal-open { overflow: hidden; }
 .plant__title { color: var(--ink-strong); }
 
 .plant__status {
+  color: var(--ink);
   font-size: calc((var(--fs-caption) - 2) * var(--u));
   line-height: 1.2;
   margin-top: calc(4 * var(--u));
@@ -202,6 +203,7 @@ body.modal-open { overflow: hidden; }
 
 .modal__status {
   display: inline-block;
+  color: var(--ink);
   margin-top: calc(8 * var(--u));
   font-family: var(--font-caption);
   font-size: calc((var(--fs-caption) - 1) * var(--u));

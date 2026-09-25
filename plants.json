@@ -168,7 +168,7 @@
       "slug": "petrushka",
       "title": "Петрушка листовая",
       "status": "no",
-      "note": "Не зимует (двулетник, выращивается как однолетник)",
+      "note": "Не зимует",
       "image": "assets/plants/08-petrushka.jpg",
       "credit": {
         "author": "Forest & Kim Starr",
@@ -190,7 +190,7 @@
       "slug": "perets-dekorativny",
       "title": "Перец декоративный",
       "status": "no",
-      "note": "Не зимует в грунте, в тепле — как комнатное",
+      "note": "Не зимует",
       "image": "assets/plants/09-perets-dekorativny.jpg",
       "credit": {
         "author": "Satin66Flower",
@@ -212,7 +212,7 @@
       "slug": "verbena",
       "title": "Вербена буэнос-айресская",
       "status": "no",
-      "note": "Не зимует в средней полосе, выращивается как однолетник",
+      "note": "Высаживается заново весной (семенами)",
       "image": "assets/plants/10-verbena.jpg",
       "credit": {
         "author": "Shuvaev",
@@ -234,7 +234,7 @@
       "slug": "gaura",
       "title": "Гаура Линдхеймера",
       "status": "no",
-      "note": "Не зимует, выращивается как однолетник",
+      "note": "Не зимует",
       "image": "assets/plants/11-gaura.jpg",
       "credit": {
         "author": "Agnes Monkelbaan",
@@ -256,7 +256,7 @@
       "slug": "kosmeya",
       "title": "Космея дваждыперистая",
       "status": "no",
-      "note": "Не зимует, однолетник",
+      "note": "Высаживается заново весной (семенами)",
       "image": "assets/plants/12-kosmeya.jpg",
       "credit": {
         "author": "Kryesmin",
@@ -278,7 +278,7 @@
       "slug": "tabak-dushisty",
       "title": "Табак душистый",
       "status": "no",
-      "note": "Не зимует, однолетник",
+      "note": "Не зимует",
       "image": "assets/plants/13-tabak-dushisty.jpg",
       "credit": {
         "author": "Scott Zona",
@@ -300,7 +300,7 @@
       "slug": "lobeliya-krasnaya",
       "title": "Лобелия красная",
       "status": "no",
-      "note": "Не зимует, однолетник в средней полосе",
+      "note": "Не зимует",
       "image": "assets/plants/14-lobeliya-krasnaya.jpg",
       "credit": {
         "author": "Dr. Thomas G. Barnes / U.S. Fish and Wildlife Service",
@@ -320,9 +320,9 @@
     {
       "id": 15,
       "slug": "georginy",
-      "title": "Георгины (клубни)",
+      "title": "Георгины",
       "status": "no",
-      "note": "Не зимуют — клубни выкапывать",
+      "note": "Высаживается заново весной (клубнем)",
       "image": "assets/plants/15-georginy.jpg",
       "credit": {
         "author": "BRPever",
@@ -344,7 +344,7 @@
       "slug": "tomaty-cherri",
       "title": "Томаты черри",
       "status": "no",
-      "note": "Не зимуют, однолетник",
+      "note": "Не зимует",
       "image": "assets/plants/16-tomaty-cherri.jpg",
       "credit": {
         "author": "JS",
