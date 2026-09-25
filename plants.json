@@ -6,6 +6,7 @@
   "statuses": {
     "winters": "Зимует",
     "fifty": "Зимует при условиях",
+    "replant": "Высаживается весной",
     "no": "Не зимует"
   },
   "plants": [
@@ -34,7 +35,7 @@
     {
       "id": 2,
       "slug": "moliniya",
-      "title": "Молиния голубая ‘Heidebraut’",
+      "title": "Молиния голубая",
       "status": "winters",
       "note": "Зимует",
       "image": "assets/plants/02-moliniya.jpg",
@@ -78,7 +79,7 @@
     {
       "id": 4,
       "slug": "tysyachelistnik",
-      "title": "Тысячелистник птармика ‘Marshmallow’",
+      "title": "Тысячелистник птармика",
       "status": "winters",
       "note": "Зимует",
       "image": "assets/plants/04-tysyachelistnik.jpg",
@@ -144,7 +145,7 @@
     {
       "id": 7,
       "slug": "lofant",
-      "title": "Лофант ‘Blue Fortune’ / ‘Black Adder’",
+      "title": "Лофант",
       "status": "fifty",
       "note": "Зимует при условиях",
       "image": "assets/plants/07-lofant.jpg",
@@ -161,6 +162,72 @@
         "watering": "Умеренный, засухоустойчив",
         "fertilizer": "Необильное, весной комплексное",
         "other": "Обрезка отцветших метёлок продлевает цветение; в холодных зонах мульчировать на зиму"
+      }
+    },
+    {
+      "id": 10,
+      "slug": "verbena",
+      "title": "Вербена буэнос-айресская",
+      "status": "replant",
+      "note": "Высаживается весной (семенами)",
+      "image": "assets/plants/10-verbena.jpg",
+      "credit": {
+        "author": "Shuvaev",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Verbena_bonariensis,_Morris_Arboretum_02.jpg"
+      },
+      "care": {
+        "soil": "Дренированный, некислый, нетребовательна",
+        "neighbors": "Хорошо с космеей, злаками, кореопсисом — не затеняет соседей",
+        "light": "Солнце",
+        "planting": "Сеять на рассаду заранее (долгий цикл до цветения) или в грунт после заморозков",
+        "watering": "Умеренный, засухоустойчива",
+        "fertilizer": "Минимальное",
+        "other": "Активно самосевается; собрать семена осенью"
+      }
+    },
+    {
+      "id": 12,
+      "slug": "kosmeya",
+      "title": "Космея дваждыперистая",
+      "status": "replant",
+      "note": "Высаживается весной (семенами)",
+      "image": "assets/plants/12-kosmeya.jpg",
+      "credit": {
+        "author": "Kryesmin",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cosmos_bipinnatus_(flowers)_01.jpg"
+      },
+      "care": {
+        "soil": "Любой, даже бедный; жирная почва снижает цветение",
+        "neighbors": "Хорошо со злаками, вербеной; не заглушать низкорослые растения",
+        "light": "Солнце",
+        "planting": "Сеять в грунт весной после заморозков или на рассаду; активно самосевается",
+        "watering": "Умеренный, засухоустойчива",
+        "fertilizer": "Не требуется",
+        "other": "Прищипка для кустистости; собрать семена осенью для пересева"
+      }
+    },
+    {
+      "id": 15,
+      "slug": "georginy",
+      "title": "Георгины",
+      "status": "replant",
+      "note": "Высаживается весной (клубнем)",
+      "image": "assets/plants/15-georginy.jpg",
+      "credit": {
+        "author": "BRPever",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Garden_Dahlia_flower.jpg"
+      },
+      "care": {
+        "soil": "Плодородный, рыхлый, дренированный",
+        "neighbors": "Не сажать вплотную к высоким многолетникам — нужен доступ для выкопки",
+        "light": "Солнце",
+        "planting": "Высокорослые сорта — предусмотреть опору и подвязку",
+        "watering": "Обильный в жару, без застоя воды",
+        "fertilizer": "Комплексное с калием и фосфором в бутонизацию, без избытка азота",
+        "other": "После первых заморозков срезать ботву, выкопать клубни, просушить, хранить при 5–8°C"
       }
     },
     {
@@ -208,28 +275,6 @@
       }
     },
     {
-      "id": 10,
-      "slug": "verbena",
-      "title": "Вербена буэнос-айресская",
-      "status": "no",
-      "note": "Высаживается заново весной (семенами)",
-      "image": "assets/plants/10-verbena.jpg",
-      "credit": {
-        "author": "Shuvaev",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Verbena_bonariensis,_Morris_Arboretum_02.jpg"
-      },
-      "care": {
-        "soil": "Дренированный, некислый, нетребовательна",
-        "neighbors": "Хорошо с космеей, злаками, кореопсисом — не затеняет соседей",
-        "light": "Солнце",
-        "planting": "Сеять на рассаду заранее (долгий цикл до цветения) или в грунт после заморозков",
-        "watering": "Умеренный, засухоустойчива",
-        "fertilizer": "Минимальное",
-        "other": "Активно самосевается; собрать семена осенью"
-      }
-    },
-    {
       "id": 11,
       "slug": "gaura",
       "title": "Гаура Линдхеймера",
@@ -249,28 +294,6 @@
         "watering": "Умеренный, засухоустойчива",
         "fertilizer": "Минимальное",
         "other": "Обрезка отцветших метёлок продлевает цветение; в холодных зонах мульчировать на зиму"
-      }
-    },
-    {
-      "id": 12,
-      "slug": "kosmeya",
-      "title": "Космея дваждыперистая",
-      "status": "no",
-      "note": "Высаживается заново весной (семенами)",
-      "image": "assets/plants/12-kosmeya.jpg",
-      "credit": {
-        "author": "Kryesmin",
-        "license": "CC0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosmos_bipinnatus_(flowers)_01.jpg"
-      },
-      "care": {
-        "soil": "Любой, даже бедный; жирная почва снижает цветение",
-        "neighbors": "Хорошо со злаками, вербеной; не заглушать низкорослые растения",
-        "light": "Солнце",
-        "planting": "Сеять в грунт весной после заморозков или на рассаду; активно самосевается",
-        "watering": "Умеренный, засухоустойчива",
-        "fertilizer": "Не требуется",
-        "other": "Прищипка для кустистости; собрать семена осенью для пересева"
       }
     },
     {
@@ -315,28 +338,6 @@
         "watering": "Регулярный, не пересушивать почву",
         "fertilizer": "Лёгкое комплексное раз в 2–3 недели",
         "other": "Удалять отцветшие цветки для продления цветения"
-      }
-    },
-    {
-      "id": 15,
-      "slug": "georginy",
-      "title": "Георгины",
-      "status": "no",
-      "note": "Высаживается заново весной (клубнем)",
-      "image": "assets/plants/15-georginy.jpg",
-      "credit": {
-        "author": "BRPever",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Garden_Dahlia_flower.jpg"
-      },
-      "care": {
-        "soil": "Плодородный, рыхлый, дренированный",
-        "neighbors": "Не сажать вплотную к высоким многолетникам — нужен доступ для выкопки",
-        "light": "Солнце",
-        "planting": "Высокорослые сорта — предусмотреть опору и подвязку",
-        "watering": "Обильный в жару, без застоя воды",
-        "fertilizer": "Комплексное с калием и фосфором в бутонизацию, без избытка азота",
-        "other": "После первых заморозков срезать ботву, выкопать клубни, просушить, хранить при 5–8°C"
       }
     },
     {

@@ -24,6 +24,7 @@
 
   --status-winters: #2f9e44;
   --status-fifty: #e8890c;
+  --status-replant: #d3ae1a;
   --status-no: #a9a9a9;
 
   --font: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto,
@@ -165,6 +166,7 @@ body.modal-open { overflow: hidden; }
 }
 .plant__status--winters { --dot: var(--status-winters); }
 .plant__status--fifty   { --dot: var(--status-fifty); }
+.plant__status--replant { --dot: var(--status-replant); }
 .plant__status--no      { --dot: var(--status-no); }
 
 /* --- care modal ------------------------------------------------------------ */
@@ -219,6 +221,7 @@ body.modal-open { overflow: hidden; }
 }
 .modal__status--winters { --dot: var(--status-winters); }
 .modal__status--fifty   { --dot: var(--status-fifty); }
+.modal__status--replant { --dot: var(--status-replant); }
 .modal__status--no      { --dot: var(--status-no); }
 
 .modal__care {
